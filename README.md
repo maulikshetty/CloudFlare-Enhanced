@@ -16,7 +16,7 @@ This Python script is designed for small websites to monitor server CPU usage an
 ## ⚙️ Setup and Usage
 
 ### 1️⃣ Prerequisites
-- Python 3.6+
+- Python 3+
 - Install required Python libraries:
 - ```py
   pip install psutil requests
@@ -33,12 +33,12 @@ Update the following variables in the script:
 
 ### 3️⃣ Run the Script
 Execute the script to test: 
-```py
+```
 python script.py
 ```
 
 Execute the script for production:
-```py
+```
 nohup script.py &
 ```
 
@@ -48,7 +48,7 @@ nohup will keep thje script running in background even if the terminal is closed
 ## 🚦 Workflow Overview
 
 1. The script monitors server CPU usage at regular intervals.
-2. If CPU usage exceeds the specified CPU_THRESHOLD:
+2. If CPU usage exceeds the specified `CPU_THRESHOLD`:
    - Creates or enables a Cloudflare firewall rule (ForceChallenge).
    - Applies Forced CAPTCHA to visitors, mitigating potential attacks.
 3. When CPU usage normalizes:
@@ -60,8 +60,8 @@ nohup will keep thje script running in background even if the terminal is closed
 
 ### Modify the Thresholds:
 Adjust CPU_THRESHOLD and CHECK_INTERVAL in the script for your specific needs:
-CHECK_INTERVAL = 20  # Check CPU every 20 minute  // Adjust as per your requirements
-CPU_THRESHOLD = 70  # Trigger mitigation if CPU usage exceeds 70% or as per your requirements
+`CHECK_INTERVAL` = 20  # Check CPU every 20 minute  // Adjust as per your requirements
+`CPU_THRESHOLD` = 70  # Trigger mitigation if CPU usage exceeds 70% or as per your requirements
 
 ### Change the Rule Configuration:
 Update the RULE_NAME and the filter expression in the create_rule function to customize the firewall rule name.
