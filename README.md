@@ -2,6 +2,8 @@
 
 This Python script is designed for small websites to monitor server CPU usage and mitigate potential DDoS attacks or anomalies by leveraging Cloudflare’s custom firewall rules. It ensures continuous server protection by automatically enabling or disabling mitigation (Forced CAPTCHA) based on CPU load.
 
+Refer to https://developers.cloudflare.com/waf/custom-rules/create-api/ for making changes or adding extra functions in the code 
+
 ---
 
 ## 📋 Features
