@@ -44,7 +44,8 @@ Execute the script for production:
 nohup script.py &
 ```
 
-nohup will keep thje script running in background even if the terminal is closed.
+nohup will keep the script running in background even if the terminal is closed.
+
 ---
 
 ## 🚦 Workflow Overview
